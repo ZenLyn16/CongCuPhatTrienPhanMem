@@ -1,6 +1,7 @@
 -- phpMyAdmin SQL Dump
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
+--test
 --
 -- Máy chủ: 127.0.0.1
 -- Thời gian đã tạo: Th10 07, 2022 lúc 11:54 AM

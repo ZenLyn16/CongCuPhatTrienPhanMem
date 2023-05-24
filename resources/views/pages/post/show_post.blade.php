@@ -7,7 +7,7 @@
             <div style="text-transform: none;" class="title-content">{{$pos->post_title}}</div>
             <div style="font-size: 12px" class="mb-3">
                 Bình luận: 0
-                &ensp;-&ensp; Ngày tạo: {{$pos->created_at}} &ensp;-&ensp; Lượt xem: 68
+                &ensp;-&ensp; Ngày tạo: {{$pos->created_at}} &ensp;-&ensp; Lượt xem: 190
             </div>
             <p><b>{{$pos->post_desc}}</b></p>
             <p>{!!$pos->post_content!!}</p>
