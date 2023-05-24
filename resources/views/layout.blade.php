@@ -140,7 +140,7 @@
                                 <li class="dropdown-item"><a href="#">Khay trái cây</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/hethongtraicayPTFruit">Fanpage</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/profile.php?id=100028232147841">Fanpage</a></li>
                         <li class="nav-item dropdown subnav-item">
                             <a class="nav-link" href="" onclick="return false;">Tin tức</a>
                             <ul class="dropdown-menu subnav">
@@ -223,10 +223,10 @@
                             <a href="#" title="Youtube">Youtube</a>
                         </li>
                         <li class="col-md-5 nav-row-item">
-                            <a href="tel: 0943 609 263">0943 609 263</a>
+                            <a href="tel: 0911 939 025">0911 939 025</a>
                         </li>
                         <li class="col-md-5 nav-row-item">
-                            <a href="tel: 0943 609 263">0943 609 263 (giờ hành chính)</a>
+                            <a href="tel: 0911 939 025">0911 939 025 (giờ hành chính)</a>
                         </li>
                         <li class="col-md-10 nav-row-item">
                             <a href="mailto: nguyenhhieu160402@gmail.com">guyenhhieu160402@gmail.com</a>
@@ -282,7 +282,7 @@
                         </ul>
                     </li>
                     <li>
-                        <div><a class="nav-link js-hide" href="https://www.facebook.com/hethongtraicayPTFruit">Fanpage</a></div>
+                        <div><a class="nav-link js-hide" href="https://www.facebook.com/profile.php?id=100028232147841">Fanpage</a></div>
                     </li>
                     <li class="nav-item dropdown subnav-item">
                         <span>

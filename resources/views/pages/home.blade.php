@@ -212,7 +212,7 @@
     <div class="row">
         <div class="text-center mb-3">
             <a class="title-content" href="{{url('/danh-muc-san-pham/24')}}">
-                <img src="{{url('public/client/img/dot-title-left.png')}}" alt=""> Hộp quà cao cấpt <img src="{{url('public/client/img/dot-title-right.png')}}" alt="">
+                <img src="{{url('public/client/img/dot-title-left.png')}}" alt=""> Hộp quà cao cấp <img src="{{url('public/client/img/dot-title-right.png')}}" alt="">
             </a>
             <h5 class="font-linotteBold">Hộp quà trái cây cao cấp - thực phẩm nhập khẩu gói theo yêu cầu, đa dạng, sang trọng, đẹp mắt, tinh tế</h5>
         </div>
@@ -262,7 +262,7 @@
 <!---------- Banner ---------->
 <div class="wrap-banner">
     <div class="wrap-img text-center">
-        <img src="{{url('public/client/img/banner-img.png')}}" alt="PT Fruit" title="PT Fruit - Thương hiệu trái cây miền Tây số 1 Việt Nam">
+        <img src="{{url('public/client/img/banner-img1.png')}}" alt="PT Fruit" title="PT Fruit - Thương hiệu trái cây miền Tây số 1 Việt Nam">
     </div>
     <div class="container text-center">
         <div class="title-content">
