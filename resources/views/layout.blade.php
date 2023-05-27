@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO -->
+    <!-- SEO tesst -->
     <meta name="author" content="">
     <meta name="description" content="{{$meta_desc}}">
     <meta name="robots" content="INDEX,FOLLOW">
@@ -17,7 +17,7 @@
     <meta property="og:title" content="{{$meta_title}}" />
     <meta property="og:url" content="{{$url_canonical}}" />
     <meta property="og:type" content="website" />
-    <!-- END SEO -->
+    <!-- END SEO tesst -->
     <title>{{$meta_title}}</title>
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
