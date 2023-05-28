@@ -34,7 +34,7 @@
                                             <input type="password" data-validation="length" data-validation-length="min1" data-validation-error-msg="Vui lòng nhập mật khẩu!"
                                             name="admin_password" class="form-control form-control-user" placeholder="Mật khẩu...">
                                         </div>
-                                        <div class="g-recaptcha" data-sitekey="{{env('CAPTCHA_KEY')}}"></div><br/>
+                                       
                                         @foreach($errors->all() as $error)
                                             <strong style="color: red; font-size: 12px;">{{$error}}</strong><br>
                                         @endforeach
@@ -62,8 +62,7 @@
             </div>
         </div>
     </div>
-    <!-- Re Captcha -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  
 
     <!-- Form validator -->
     <script src="{{asset('public/server/js/jquery.form-validator.min.js')}}"></script>

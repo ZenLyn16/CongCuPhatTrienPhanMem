@@ -43,7 +43,7 @@
                                                 <label class="custom-control-label" for="customCheck">Ghi nhớ đăng nhập</label>
                                             </div>
                                         </div>
-                                        <div class="g-recaptcha" data-sitekey="{{env('CAPTCHA_KEY')}}"></div><br/>
+                             
                                         @foreach($errors->all() as $error)
                                             <strong style="color: red; font-size: 12px;">{{$error}}</strong><br>
                                         @endforeach

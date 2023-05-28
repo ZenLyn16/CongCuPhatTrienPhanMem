@@ -40,8 +40,8 @@
         <div class="wrapper-top py-1">
             <div class="container">
                 <div class="detail">
-                    <a class="map-top" href="https://goo.gl/maps/zm4MPY3XfUV6NNmN9"><i class="fas fa-map-marker-alt"></i> Địa chỉ: 470 Trần Đại Nghĩa - Phường Hòa Hải - Quận Ngũ Hành Sơn - Tp. Đà Nẵng |</a>
-                    <a href="tel: 0941 547 945"><i class="m-lg-1 fas fa-phone-alt"></i> 0941 547 945</a>
+                    <a class="map-top" href="https://goo.gl/maps/zm4MPY3XfUV6NNmN9"><i class="fas fa-map-marker-alt"></i> Địa chỉ: Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội|</a>
+                    <a href="tel: 0941 547 945"><i class="m-lg-1 fas fa-phone-alt"></i> 0911 939 025</a>
                 </div>
                 <div class="social">
                     Social:
@@ -62,7 +62,7 @@
                         <div class="col-md-3 mt-4"><img src="{{url('public/client/img/icon-phone.png')}}" alt="icon-phone"></div>
                         <div class="col-md-9 mt-3">
                             <a class="item-row1" href="#">Hotline</a><br/>
-                            <a class="item-row2 text-danger" href="tell: 0932 560 189">0932 560 189</a>
+                            <a class="item-row2 text-danger" href="tell: 0911 939 025">0911 939 025</a>
                         </div>
                     </div>
                 </div>
@@ -122,7 +122,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('/')}}"><i class="fas fa-home-alt"></i></a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
                         <li class="nav-item dropdown subnav-item">
                             <a class="nav-link" href="" onclick="return false;">Sản phẩm</a>
                             <ul class="dropdown-menu subnav">
@@ -132,15 +131,7 @@
                                 @endforeach
                             </ul>
                         </li>
-                        <li class="nav-item dropdown subnav-item">
-                            <a class="nav-link" href="" onclick="return false;">Quà tặng</a>
-                            <ul class="dropdown-menu subnav">
-                                <li class="dropdown-item"><a href="#">Giỏ trái cây</a></li>
-                                <li class="dropdown-divider"></li>
-                                <li class="dropdown-item"><a href="#">Khay trái cây</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/hethongtraicayPTFruit">Fanpage</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/profile.php?id=100028232147841">Fanpage</a></li>
                         <li class="nav-item dropdown subnav-item">
                             <a class="nav-link" href="" onclick="return false;">Tin tức</a>
                             <ul class="dropdown-menu subnav">
@@ -223,13 +214,13 @@
                             <a href="#" title="Youtube">Youtube</a>
                         </li>
                         <li class="col-md-5 nav-row-item">
-                            <a href="tel: 0941 547 945">0941 547 945</a>
+                            <a href="tel: 0911 939 025">0911 939 025</a>
                         </li>
                         <li class="col-md-5 nav-row-item">
-                            <a href="tel: 0932 560 189">0932 560 189 (giờ hành chính)</a>
+                            <a href="tel: 0911 939 025">0911 939 025 (giờ hành chính)</a>
                         </li>
                         <li class="col-md-10 nav-row-item">
-                            <a href="mailto: ntphat.20it10@vku.udn.vn">ntphat.20it10@vku.udn.vn</a>
+                            <a href="mailto: nguyenhhieu160402@gmail.com">guyenhhieu160402@gmail.com</a>
                         </li>
                     </ul>
                 </div>
@@ -282,7 +273,7 @@
                         </ul>
                     </li>
                     <li>
-                        <div><a class="nav-link js-hide" href="https://www.facebook.com/hethongtraicayPTFruit">Fanpage</a></div>
+                        <div><a class="nav-link js-hide" href="https://www.facebook.com/profile.php?id=100028232147841">Fanpage</a></div>
                     </li>
                     <li class="nav-item dropdown subnav-item">
                         <span>
@@ -348,15 +339,15 @@
                         <p>
                             <a href="{{url('/')}}"><img class="mb-3 logo-footer" src="{{url('public/client/img/logo-mobile.png')}}" alt="PT Fruit - Thương hiệu trái cây miền Tây số 1 Việt Nam"></a> <br>
                             <i class="mr-3 fas fa-map-marked-alt"></i>Cơ sở 1 <br>
-                            <span>&emsp;&emsp;<i class="mr-3 fas fa-map-marker-alt"></i>Địa chỉ:<a class="row-bottom-2" href="https://goo.gl/maps/79wo14qfxCXLLs8H6"> Khái Tây 1, P. Hòa Quý, Q. Ngũ Hành Sơn, TP. Đà Nẵng</a></span><br>
-                            <span>&emsp;&emsp;<i class="mr-3 fas fa-phone-alt"></i>Điện thoại:<a class="row-bottom-2" href="tel: 0941 547 945"> 0941 547 945</a></span><br>
-                            <span>&emsp;&emsp;<i class="mr-3 fas fa-envelope"></i>Email:<a class="row-bottom-2" href="mailto: ntphat.20it10@vku.udn.vn"> ntphat.20it10@vku.udn.vn</a></span>
+                            <span>&emsp;&emsp;<i class="mr-3 fas fa-map-marker-alt"></i>Địa chỉ:<a class="row-bottom-2" href="https://goo.gl/maps/UaLozAdYMdhvsCrd8?coh=178571&entry=tt">295 Ngô Gia Tự, Xóm Tự, Tam Sơn, Từ Sơn, Bắc Ninh</a></span><br>
+                            <span>&emsp;&emsp;<i class="mr-3 fas fa-phone-alt"></i>Điện thoại:<a class="row-bottom-2" href="tel: 0911 939 025"> 0911 939 025</a></span><br>
+                            <span>&emsp;&emsp;<i class="mr-3 fas fa-envelope"></i>Email:<a class="row-bottom-2" href="mailto: ntphat.20it10@vku.udn.vn"> nguyenhhieu160402@gmail.com</a></span>
                         </p>
                         <p>
                             <i class="mr-3 fas fa-map-marked-alt"></i>Cơ sở 2 <br>
-                            <span>&emsp;&emsp;<i class="mr-3 fas fa-map-marker-alt"></i>Địa chỉ:<a class="row-bottom-2" href="https://goo.gl/maps/79wo14qfxCXLLs8H6"> Khái Tây 1, P. Hòa Quý, Q. Ngũ Hành Sơn, TP. Đà Nẵng</a></span><br>
-                            <span>&emsp;&emsp;<i class="mr-3 fas fa-phone-alt"></i>Điện thoại:<a class="row-bottom-2" href="tel: 0932 560 189"> 0932 560 189</a></span><br>
-                            <span>&emsp;&emsp;<i class="mr-3 fas fa-envelope"></i>Email:<a class="row-bottom-2" href="mailto: dttai.20it10@vku.udn.vn"> dttai.20it10@vku.udn.vn</a></span>
+                            <span>&emsp;&emsp;<i class="mr-3 fas fa-map-marker-alt"></i>Địa chỉ:<a class="row-bottom-2" href="https://goo.gl/maps/W6jzYFesoT2iqAoK7?coh=178571&entry=tt"> Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội</a></span><br>
+                            <span>&emsp;&emsp;<i class="mr-3 fas fa-phone-alt"></i>Điện thoại:<a class="row-bottom-2" href="tel: 0943 609 263"> 0943 609 263</a></span><br>
+                            <span>&emsp;&emsp;<i class="mr-3 fas fa-envelope"></i>Email:<a class="row-bottom-2" href="mailto: dttai.20it10@vku.udn.vn"> nguyengiangnb100202@gmail.com</a></span>
                         </p>
                     </div>
                     <div class="col-md-4">
@@ -379,27 +370,27 @@
                 </div>
                 <div class="row container">
                     <div class="col-md-4 px-4 text-center social-footer">
-                        <a href="https://www.facebook.com/hethongtraicayPTFruit"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.facebook.com/messages/t/106933711495808"><i class="fab fa-facebook-messenger"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100028232147841"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/messages/t/100027114264176"><i class="fab fa-facebook-messenger"></i></a>
+                        <a href="https://www.youtube.com/channel/UCEQjnvJMV0eWe1LoEdSrq7g"><i class="fab fa-youtube"></i></a>
                     </div>
-                    <div class="col-md-6 copyright">Coppyright©2021 PT Fruit All Rights Reserved | Designed by PT Team</div>
+                    <div class="col-md-6 copyright">Coppyright©2023 Nhóm 3 CCPTPM | Designed by Team 3</div>
                 </div>
             </div>
         </div>
         <div class="row-bottom">
             <div class="row">
                 <div class="col-md-2">
-                    <span class="row-bottom-1">Mua hàng:<a class="row-bottom-2" href="tel: 0932 560 189"> 0932 560 189</a></span>
+                    <span class="row-bottom-1">Mua hàng:<a class="row-bottom-2" href="tel: 0911 939 025"> 0911 939 025</a></span>
                 </div>
                 <div class="col-md-3">
                     <span class="row-bottom-1">Hotline:</span>
-                    <a class="row-bottom-2" href="tel: 0941 547 945"> 0941 547 945</a>
+                    <a class="row-bottom-2" href="tel: 0911 939 025"> 0911 939 025</a>
                     <span> (giờ hành chính)</span>
                 </div>
                 <div class="col-md-3">
                     <span class="row-bottom-1">Email:</span>
-                    <a class="row-bottom-2" href="mailto: ntphat.20it10@vku.udn.vn"> ntphat.20it10@vku.udn.vn</a>
+                    <a class="row-bottom-2" href="mailto: ntphat.20it10@vku.udn.vn"> nguyenhhieu160402@gmail.com</a>
                 </div>
             </div>
         </div>

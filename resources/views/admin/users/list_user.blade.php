@@ -56,9 +56,6 @@
                                 @hasrole('admin')
                                 <td class="text-center">
                                     <input type="submit" value="Cấp quyền" class="btn btn-sm btn-light mb-1">&ensp;
-                                    <a href="{{url('/admin/chuyen-quyen/'.$user->admin_id)}}" title="Chuyển quyền đăng nhập" onclick="return confirm('Bạn có chắn chắn đăng nhập vào tài khoản này không?')">
-                                        <i style="font-size: 24px;" class="text-apple fas fa-sync-alt"></i>
-                                    </a>&ensp;
                                     <a href="{{url('/admin/xoa-nguoi-dung/'.$user->admin_id)}}" title="Xóa người dùng" onclick="return confirm('Bạn có chắn chắn xóa người dùng này không?')">
                                         <i style="font-size: 24px;" class="text-danger fas fa-trash-alt"></i>
                                     </a>

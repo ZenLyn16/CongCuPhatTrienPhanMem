@@ -18,7 +18,7 @@
                     <h5 class="mt-3 mb-2"><a style="font-size: 18px; height: 48px;" class="text-grape d-block" href="{{url('bai-viet/'.$pos->post_slug)}}">{{$pos->post_title}}</a></h5>
                     <div style="font-size: 12px">
                         Bình luận: 0
-                        &ensp;-&ensp; Ngày tạo: {{$pos->created_at}} &ensp;-&ensp; Lượt xem: 68
+                        &ensp;-&ensp; Ngày tạo: {{$pos->created_at}} &ensp;-&ensp; Lượt xem: 190
                     </div>
                     <p style="font-size: 16px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">{{$pos->post_desc}}</p>
                     <p><a style="border-radius: 50px; width: 120px;" class="btn btn-grape" href="{{url('bai-viet/'.$pos->post_slug)}}">Xem thêm</a></p>

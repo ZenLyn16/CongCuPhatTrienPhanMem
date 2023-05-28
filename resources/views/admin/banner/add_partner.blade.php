@@ -15,7 +15,6 @@
             </div>
             <div class="form-group">
                 <label style="margin-bottom: 0;"><strong>Hình ảnh đối tác</strong></label>
-                <small style="margin-top: 0;" class="form-text text-muted">Vui lòng thêm hình ảnh đối tác có kích thước 500 x 500</small>
                 <input type="file" data-validation="length" data-validation-length="min1" data-validation-error-msg="Vui lòng tải hình ảnh đối tác lên!"
                 style="padding: .2rem .75rem;" class="form-control" name="partner_image">
             </div>

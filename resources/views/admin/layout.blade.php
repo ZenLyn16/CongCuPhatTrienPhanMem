@@ -55,7 +55,6 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="{{url('/admin/doi-tac')}}">Đối tác</a>
                         <a class="collapse-item" href="{{url('/admin/slider')}}">Quản lý Slider</a>
-                        <a class="collapse-item" href="{{url('/admin/lien-he')}}">Trang liên hệ</a>
                     </div>
                 </div>
             </li>
@@ -73,9 +72,6 @@
                         @endhasrole
                         <a class="collapse-item" href="{{url('/admin/nguoi-dung')}}">Danh sách người dùng</a>
                         @endhasrole
-                        @users_transfer
-                        <a class="collapse-item" href="{{url('/admin/ngung-chuyen-quyen')}}">Ngừng chuyển quyền</a>
-                        @endusers_transfer
                     </div>
                 </div>
             </li>
@@ -149,24 +145,6 @@
                 </a>
             </li>
             @endhasrole
-            <li class="nav-item">
-                <a class="nav-link" href="{{url('/admin/tin-nhan-lien-he')}}">
-                    <i class="fas fa-comments"></i>
-                    <span>Tin nhắn liên hệ</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{url('/admin/binh-luan')}}">
-                    <i class="fas fa-comments"></i>
-                    <span>Bình luận</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{url('/admin/danh-sach-video')}}">
-                    <i class="fas fa-comments"></i>
-                    <span>Video</span>
-                </a>
-            </li>
             <hr class="sidebar-divider">
             <div class="sidebar-heading">Cài đặt</div>
             <li class="nav-item">
