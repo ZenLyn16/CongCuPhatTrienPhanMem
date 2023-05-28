@@ -12,7 +12,7 @@
                 <div class="col-md-5">
                     <p>
                         <div class="title-footer">PT Fruit</div>
-                        <span>&emsp;&emsp;<i class="mr-3 fas fa-map-marker-alt"></i>Địa chỉ:<a class="row-bottom-2" href="https://goo.gl/maps/79wo14qfxCXLLs8H6"> Số 298298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội, Việt Nam</a></span><br>
+                        <span>&emsp;&emsp;<i class="mr-3 fas fa-map-marker-alt"></i>Địa chỉ:<a class="row-bottom-2" href="https://goo.gl/maps/79wo14qfxCXLLs8H6"> Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội, Việt Nam</a></span><br>
                         <span>&emsp;&emsp;<i class="mr-3 fas fa-phone-alt"></i>Điện thoại:<a class="row-bottom-2" href="tel: 0911 939 025"> 0911 939 0255</a></span><br>
                         <span>&emsp;&emsp;<i class="mr-3 fas fa-envelope"></i>Email:<a class="row-bottom-2" href="mailto: ntphat.20it10@vku.udn.vn"> nguyenhhieu160402@gmail.com</a></span>
                     </p>
