@@ -50,4 +50,3 @@
     @endforeach
 </div>
 @endsection
-<!-- SEO tesst -->

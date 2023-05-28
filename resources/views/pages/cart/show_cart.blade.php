@@ -17,9 +17,9 @@
                         <?php use Illuminate\Support\Facades\Session; ?>
                     </p>
                     <div style="text-align: right;" class="col-md-4">
-                        <a href="{{url('/')}}" class="btn btn-apple text-white">Tiếp tục mua sắm</a>
+                        <a href="{{url('/')}}" class="btn btn-apple text-white">Tiếp tục mua sắm. </a>
                         @if(Session::get('cart') == true)
-                        <a class="btn btn-danger" href="{{url('/xoa-gio-hang')}}">Xóa giỏ hàng</a>
+                        <a class="btn btn-danger" href="{{url('/xoa-gio-hang')}}">Xóa giỏ hàng. </a>
                         @endif
                     </div>
                 </div>
@@ -155,4 +155,3 @@
     </div>
 </div>
 @endsection
-<!-- SEO tesst -->
