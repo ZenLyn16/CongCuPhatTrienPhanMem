@@ -11,7 +11,7 @@
                 <thead>
                     <tr>
                         <th class="text-center">#</th>
-                        <th>Tên danh mục bài viết</th>
+                        <th>Tên danh mục bài viết..</th>
                         <th>Slug</th>
                         <th class="text-center">Hiển thị</th>
                     </tr>
