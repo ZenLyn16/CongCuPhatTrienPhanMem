@@ -28,7 +28,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label><strong>Xã / Phường</strong></label>
+                <label><strong>Phường / Xã</strong></label>
                 <select id="wards" name="wards" class="form-control form-control-sm wards">
                     <option value="">--- Chọn Xã / Phường ---</option>
                 </select>
