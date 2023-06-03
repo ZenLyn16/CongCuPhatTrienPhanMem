@@ -122,7 +122,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('/')}}"><i class="fas fa-home-alt"></i></a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
                         <li class="nav-item dropdown subnav-item">
                             <a class="nav-link" href="" onclick="return false;">Sản phẩm</a>
                             <ul class="dropdown-menu subnav">
@@ -130,14 +129,6 @@
                                 <li class="dropdown-item"><a href="{{url('/danh-muc-san-pham/'.$cate_pro->category_id)}}">{{$cate_pro->category_name}}</a></li>
                                 <li class="dropdown-divider"></li>
                                 @endforeach
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown subnav-item">
-                            <a class="nav-link" href="" onclick="return false;">Quà tặng</a>
-                            <ul class="dropdown-menu subnav">
-                                <li class="dropdown-item"><a href="#">Giỏ trái cây</a></li>
-                                <li class="dropdown-divider"></li>
-                                <li class="dropdown-item"><a href="#">Khay trái cây</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/profile.php?id=100028232147841">Fanpage</a></li>
