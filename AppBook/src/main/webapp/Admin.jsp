@@ -29,7 +29,7 @@
 	    <h1>Quản lý sản phẩm</h1>
 	    <hr>
 	    
-	    <a href="FormAdd.jsp" class="btn btn-primary mb-3" data-mdb-ripple-init>Thêm sách</a>
+	    <a href="add-control" class="btn btn-primary mb-3" data-mdb-ripple-init>Thêm sách</a>
 	    
 	    <div class="card">
 	    <div class="card-body">
@@ -58,7 +58,7 @@
 		      <td>${x.book_price}</td>
 		      <td>${x.book_quantity}</td>
 		      <td>
-		      	<a class="btn btn-secondary" data-mdb-ripple-init href="#!">
+		      	<a href="edit-book?book_id=${x.book_id}" class="btn btn-secondary" data-mdb-ripple-init>
   					<i class="fa-solid fa-pen-to-square"></i>
 				</a> 
 		      	<button class="btn btn-danger" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#del${x.book_id}">
@@ -80,7 +80,7 @@
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-secondary" data-mdb-ripple-init data-mdb-dismiss="modal"><i class="fa-solid fa-x me-1"></i> Close</button>
-			        <button type="button" class="btn btn-primary" data-mdb-ripple-init><i class="fa-solid fa-trash-can me-1"></i>Delete</button>
+			        <a href="delete-book?book_id=${x.book_id}" class="btn btn-danger" data-mdb-ripple-init><i class="fa-solid fa-trash-can me-1"></i>Delete</a>
 			      </div>
 			    </div>
 			  </div>

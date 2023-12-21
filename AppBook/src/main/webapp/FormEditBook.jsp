@@ -34,20 +34,21 @@
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-5">
-              <h2 class="text-uppercase text-center mb-5">Thêm sách mới</h2>
+              <h2 class="text-uppercase text-center mb-5">Sửa thông tin sách</h2>
 
-              <form action="add-control-2" method="post">
-
-				<h5 text-danger>${userExist}</h5>
+              <form action="edit-book-2" method="post">
 
                 <div class="form-outline mb-4">
-                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" name="book_name"/>
-                  <label class="form-label" for="form3Example1cg">Tên sách</label>
+                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" name="book_id" value="${book.book_id}" readonly/>
+                </div>
+                
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" name="book_name" value="${book.book_name}" placeholder="Tên sách"/>
                 </div>
 				
                 <div class="form-outline mb-4">
 				<select class="form-control" aria-label="Small select example" name="book_category">
-				  <option selected>Loại sách</option>
+				  <option selected>${book.book_category.category_name}</option>
 				  <c:forEach items="${iteamC}" var="x">
 					  <option value="${x.category_id}">${x.category_name}</option>
 				  </c:forEach>				    
@@ -55,47 +56,42 @@
 				</div>
                 
                 <div class="form-outline mb-4">
-                  <input type="text" id="form3Example4cg" class="form-control form-control-lg" name="book_author"/>
-                  <label class="form-label" for="form3Example4cg">Tác giả</label>
+                  <input type="text" id="form3Example4cg" class="form-control form-control-lg" name="book_author" value="${book.book_author}" placeholder="Tác giả"/>
                 </div>
                 
                 <div class="form-outline mb-4">
-                  <input type="text" id="form3Example4cg" class="form-control form-control-lg" name="book_image"/>
-                  <label class="form-label" for="form3Example4cg">Hình ảnh</label>
+                  <input type="text" id="form3Example4cg" class="form-control form-control-lg" name="book_image" value="${book.book_image}" placeholder="Hình ảnh"/>
                 </div>
                 
                 <div class="form-outline mb-4">
-                  <input type="number" id="form3Example4cg" class="form-control form-control-lg" name="book_price"/>
-                  <label class="form-label" for="form3Example4cg">Giá</label>
+                  <input type="number" id="form3Example4cg" class="form-control form-control-lg" name="book_price" value="${book.book_price}" placeholder="Giá cả"/>
                 </div>
                 
                 <div class="form-floating">
-				  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="book_notes"></textarea>
-				  <label for="floatingTextarea">Mô tả</label>
+				  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="book_notes" >${book.book_notes}</textarea>
 				</div>
                 
                 <div class="form-outlint mb-4 mt-4">
                 <p>Trạng thái</p>
 	                <div class="form-check form-check-inline">
-					  <input class="form-check-input" type="radio" name="book_status" id="inlineRadio1" value="Còn hàng">
+					  <input class="form-check-input" type="radio" name="book_status" id="inlineRadio1" value="Còn hàng" ${book.book_status.equals("Còn hàng") ? "checked" : ""}>
 					  <label class="form-check-label" for="inlineRadio1">Còn hàng</label>
 					</div>
 					<div class="form-check form-check-inline">
-					  <input class="form-check-input" type="radio" name="book_status" id="inlineRadio2" value="Hết hàng">
+					  <input class="form-check-input" type="radio" name="book_status" id="inlineRadio2" value="Hết hàng" ${book.book_status.equals("Hết hàng") ? "checked" : ""}>
 					  <label class="form-check-label" for="inlineRadio2">Hết hàng</label>
 					</div>
 				</div>
 
                 <div class="form-outline mb-4">
-                  <input type="number" id="form3Example4cdg" class="form-control form-control-lg" name="book_quantity"/>
-                  <label class="form-label" for="form3Example4cdg">Số lượng</label>
+                  <input type="number" id="form3Example4cdg" class="form-control form-control-lg" name="book_quantity" value="${book.book_quantity}" placeholder="Số lượng"/>
                 </div>
                 
                 <h5 text-danger>${wrongRePass}</h5>
 
                 <div class="d-flex justify-content-center">
                   <button type="submit"
-                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Thêm sách</button>
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Cập nhật</button>
                 </div>
 
               </form>
@@ -115,4 +111,3 @@
     <script type="text/javascript"></script>
   </body>
 </html>
-    

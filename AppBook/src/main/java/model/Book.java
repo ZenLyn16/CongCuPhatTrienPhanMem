@@ -1,20 +1,20 @@
 package model;
 
 public class Book {
-	private int book_id; 
-	private String book_name; 
+	private int book_id;
+	private String book_name;
 	private Category book_category;
-	private String book_author; 
-	private String book_image; 
-	private double book_price; 
-	private double book_original_price; 
+	private String book_author;
+	private String book_image;
+	private double book_price;
+	private double book_original_price;
 	private double book_discount_price;
-	private String book_notes; 
+	private String book_notes;
 	private String book_status;
 	private int book_quantity;
-	
+
 	public Book() {
-		
+
 	}
 
 	public Book(int book_id, String book_name, Category book_category, String book_author, String book_image,
@@ -28,6 +28,18 @@ public class Book {
 		this.book_price = book_price;
 		this.book_original_price = book_original_price;
 		this.book_discount_price = book_discount_price;
+		this.book_notes = book_notes;
+		this.book_status = book_status;
+		this.book_quantity = book_quantity;
+	}
+
+	public Book(String book_name, Category book_category, String book_author, String book_image, double book_price,
+			String book_notes, String book_status, int book_quantity) {
+		this.book_name = book_name;
+		this.book_category = book_category;
+		this.book_author = book_author;
+		this.book_image = book_image;
+		this.book_price = book_price;
 		this.book_notes = book_notes;
 		this.book_status = book_status;
 		this.book_quantity = book_quantity;
@@ -129,5 +141,5 @@ public class Book {
 				+ ", book_notes=" + book_notes + ", book_status=" + book_status + ", book_quantity=" + book_quantity
 				+ "]";
 	}
-	
+
 }
