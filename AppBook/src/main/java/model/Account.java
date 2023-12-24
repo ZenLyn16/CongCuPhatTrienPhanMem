@@ -6,11 +6,11 @@ public class Account {
 	private String account_password;
 	private short account_is_sell;
 	private short account_is_admin;
-	
+
 	public Account() {
-		
+
 	}
-	
+
 	public Account(int account_id, String account_username, String account_password, short account_is_sell,
 			short account_is_admin) {
 		this.account_id = account_id;
@@ -59,5 +59,12 @@ public class Account {
 	public void setAccount_is_admin(short account_is_admin) {
 		this.account_is_admin = account_is_admin;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Account [account_id=" + account_id + ", account_username=" + account_username + ", account_password="
+				+ account_password + ", account_is_sell=" + account_is_sell + ", account_is_admin=" + account_is_admin
+				+ "]";
+	}
+
 }

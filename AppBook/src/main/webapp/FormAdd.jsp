@@ -41,31 +41,32 @@
 				<h5 text-danger>${userExist}</h5>
 
                 <div class="form-outline mb-4">
-                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" name="book_name"/>
+                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" name="book_name" required/>
                   <label class="form-label" for="form3Example1cg">Tên sách</label>
                 </div>
 				
                 <div class="form-outline mb-4">
 				<select class="form-control" aria-label="Small select example" name="book_category">
-				  <option selected>Loại sách</option>
+				  <option selected value="Loại sách">Loại sách</option>
 				  <c:forEach items="${iteamC}" var="x">
 					  <option value="${x.category_id}">${x.category_name}</option>
 				  </c:forEach>				    
 				</select>
 				</div>
+				<div><b>${messNotSelectCate}</b></div>
                 
                 <div class="form-outline mb-4">
-                  <input type="text" id="form3Example4cg" class="form-control form-control-lg" name="book_author"/>
+                  <input type="text" id="form3Example4cg" class="form-control form-control-lg" name="book_author" required/>
                   <label class="form-label" for="form3Example4cg">Tác giả</label>
                 </div>
                 
                 <div class="form-outline mb-4">
-                  <input type="text" id="form3Example4cg" class="form-control form-control-lg" name="book_image"/>
+                  <input type="text" id="form3Example4cg" class="form-control form-control-lg" name="book_image" required/>
                   <label class="form-label" for="form3Example4cg">Hình ảnh</label>
                 </div>
                 
                 <div class="form-outline mb-4">
-                  <input type="number" id="form3Example4cg" class="form-control form-control-lg" name="book_price"/>
+                  <input type="number" id="form3Example4cg" class="form-control form-control-lg" name="book_price" required/>
                   <label class="form-label" for="form3Example4cg">Giá</label>
                 </div>
                 
@@ -77,7 +78,7 @@
                 <div class="form-outlint mb-4 mt-4">
                 <p>Trạng thái</p>
 	                <div class="form-check form-check-inline">
-					  <input class="form-check-input" type="radio" name="book_status" id="inlineRadio1" value="Còn hàng">
+					  <input class="form-check-input" type="radio" name="book_status" id="inlineRadio1" value="Còn hàng" checked>
 					  <label class="form-check-label" for="inlineRadio1">Còn hàng</label>
 					</div>
 					<div class="form-check form-check-inline">
@@ -87,7 +88,7 @@
 				</div>
 
                 <div class="form-outline mb-4">
-                  <input type="number" id="form3Example4cdg" class="form-control form-control-lg" name="book_quantity"/>
+                  <input type="number" id="form3Example4cdg" class="form-control form-control-lg" name="book_quantity" required/>
                   <label class="form-label" for="form3Example4cdg">Số lượng</label>
                 </div>
                 

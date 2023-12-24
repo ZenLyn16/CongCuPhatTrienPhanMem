@@ -1,7 +1,6 @@
 package controller;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,20 +8,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import database.BookDAOHandler;
-import model.Book;
+import database.CategoryDAOHandler;
+import model.Category;
 
 /**
- * Servlet implementation class ManagerProduct
+ * Servlet implementation class AddCategoryControl
  */
-@WebServlet("/manage-product")
-public class ManagerProduct extends HttpServlet {
+@WebServlet("/add-category")
+public class AddCategoryControl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public ManagerProduct() {
+	public AddCategoryControl() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -33,10 +32,11 @@ public class ManagerProduct extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		response.setContentType("text/html;charset=\"utf-8\"");
-		ArrayList<Book> items = new BookDAOHandler().getBooks((byte) 20);
-		request.setAttribute("items", items);
-		request.getRequestDispatcher("Admin.jsp").forward(request, response);
+		int id = Integer.parseInt(request.getParameter("idcat"));
+		String name = request.getParameter("namecat");
+		Category newCategory = new Category(id, name);
+		new CategoryDAOHandler().addCategory(newCategory);
+		response.sendRedirect("manage-category");
 	}
 
 	/**

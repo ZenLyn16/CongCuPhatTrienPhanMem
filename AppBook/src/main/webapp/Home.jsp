@@ -62,19 +62,18 @@
 	      <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)"></div>
 	      <div class="carousel-caption d-none d-sm-block mb-5">
 	        <h1 class="mb-4">
-	                <strong>Learn Bootstrap 5 with MDB</strong>
+	                <strong>My Book Store</strong>
 	              </h1>
 	
 	              <p>
-	                <strong>Best & free guide of responsive web design</strong>
+	                <strong>Những cuốn sách hay nhất</strong>
 	              </p>
 	
 	              <p class="mb-4 d-none d-md-block">
-	                <strong>The most comprehensive tutorial for the Bootstrap 5. Loved by over 3 000 000 users. Video and written versions
-	                  available. Create your own, stunning website.</strong>
+	                <strong>Đáp ứng đầy đủ mọi thể loại sách bạn mong muốn.</strong>
 	              </p>
 	
-	              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start free tutorial
+	              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Let's get started
 	                <i class="fas fa-graduation-cap ms-2"></i>
 	              </a>
 	      </div>

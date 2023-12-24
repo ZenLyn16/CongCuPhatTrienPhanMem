@@ -27,11 +27,13 @@
 					href="https://nhasachphuongnam.com/">About MDS</a></li>
 				<c:if test="${account.account_is_admin == 1}">
 					<li class="nav-item"><a class="nav-link"
-						href="#">Manager Account</a></li>
+						href="manage-account">Manager Account</a></li>
 				</c:if>
 				<c:if test="${account.account_is_sell == 1}">
 					<li class="nav-item"><a class="nav-link"
-						href="manager-product">Manager Product</a></li>
+						href="manage-category">Manage Category</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="manage-product">Manage Product</a></li>
 				</c:if>
 			</ul>
 			<!-- Left links -->

@@ -39,6 +39,10 @@ public class AddControl2 extends HttpServlet {
 
 		String name = request.getParameter("book_name");
 		String categorytxt = request.getParameter("book_category");
+		if (categorytxt.equals("Loại sách")) {
+			request.setAttribute("messNotSelectCate", "Bạn chưa chọn loại sách");
+			request.getRequestDispatcher("FormAdd.jsp").forward(request, response);
+		}
 		int category = Integer.parseInt(categorytxt);
 		String author = request.getParameter("book_author");
 		String image = request.getParameter("book_image");
@@ -49,13 +53,9 @@ public class AddControl2 extends HttpServlet {
 		String quantitytxt = request.getParameter("book_quantity");
 		int quantity = Integer.parseInt(quantitytxt);
 
-		// Create a new Book object with the uploaded image URL
 		Book newBook = new Book(name, daoC.getCategoryById(category), author, image, price, notes, status, quantity);
-		if (new BookDAOHandler().addBook(newBook)) {
-			response.sendRedirect("load");
-		} else {
-			response.sendRedirect("FormAdd.jsp");
-		}
+		new BookDAOHandler().addBook(newBook);
+		response.sendRedirect("manage-product");
 	}
 
 	/**
