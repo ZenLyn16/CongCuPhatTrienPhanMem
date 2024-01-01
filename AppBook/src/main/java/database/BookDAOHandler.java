@@ -14,7 +14,7 @@ public class BookDAOHandler {
 	private ConnectionPool cp;
 	private Connection con;
 	private CategoryDAOHandler dao;
-	
+
 	public BookDAOHandler() {
 		this.cp = new ConnectionPoolImpl();
 		try {
@@ -28,23 +28,22 @@ public class BookDAOHandler {
 		}
 		dao = new CategoryDAOHandler();
 	}
-	
-	
+
 	public Book getBookById(int idGet) {
 		StringBuilder sql = new StringBuilder();
 		sql.append("SELECT * FROM tblbook WHERE book_id = ?");
-		
+
 		try {
 			PreparedStatement pst = this.con.prepareStatement(sql.toString());
 			pst.setInt(1, idGet);
-			
+
 			ResultSet rs = pst.executeQuery();
-			
+
 			if (rs != null) {
 				while (rs.next()) {
-					return new Book(idGet, rs.getString("book_name"), dao.getCategoryById(rs.getInt("book_category")), 
-							rs.getString("book_author"), rs.getString("book_image"), rs.getDouble("book_price"), 
-							rs.getDouble("book_original_price"), rs.getDouble("book_discount_price"), 
+					return new Book(idGet, rs.getString("book_name"), dao.getCategoryById(rs.getInt("book_category")),
+							rs.getString("book_author"), rs.getString("book_image"), rs.getDouble("book_price"),
+							rs.getDouble("book_original_price"), rs.getDouble("book_discount_price"),
 							rs.getString("book_notes"), rs.getString("book_status"), rs.getInt("book_quantity"));
 				}
 				rs.close();
@@ -61,24 +60,25 @@ public class BookDAOHandler {
 		}
 		return null;
 	}
-	
+
 	public ArrayList<Book> getBooksByCategory(int categoryGet) {
 		ArrayList<Book> items = new ArrayList<>();
 		StringBuilder sql = new StringBuilder();
 		sql.append("SELECT * FROM tblbook WHERE book_category = ?");
-		
+
 		try {
 			PreparedStatement pst = this.con.prepareStatement(sql.toString());
 			pst.setInt(1, categoryGet);
-			
+
 			ResultSet rs = pst.executeQuery();
-			
+
 			if (rs != null) {
 				while (rs.next()) {
-					items.add(new Book(rs.getInt("book_id"), rs.getString("book_name"), dao.getCategoryById(rs.getInt("book_category")), 
-							rs.getString("book_author"), rs.getString("book_image"), rs.getDouble("book_price"), 
-							rs.getDouble("book_original_price"), rs.getDouble("book_discount_price"), 
-							rs.getString("book_notes"), rs.getString("book_status"), rs.getInt("book_quantity")));
+					items.add(new Book(rs.getInt("book_id"), rs.getString("book_name"),
+							dao.getCategoryById(rs.getInt("book_category")), rs.getString("book_author"),
+							rs.getString("book_image"), rs.getDouble("book_price"), rs.getDouble("book_original_price"),
+							rs.getDouble("book_discount_price"), rs.getString("book_notes"),
+							rs.getString("book_status"), rs.getInt("book_quantity")));
 				}
 				rs.close();
 			}
@@ -94,24 +94,25 @@ public class BookDAOHandler {
 		}
 		return items;
 	}
-	
+
 	public ArrayList<Book> getBooksByName(String name) {
 		ArrayList<Book> items = new ArrayList<>();
 		StringBuilder sql = new StringBuilder();
 		sql.append("SELECT * FROM tblbook WHERE book_name LIKE ?");
-		
+
 		try {
 			PreparedStatement pst = this.con.prepareStatement(sql.toString());
-			pst.setString(1, "%"+name+"%");
-			
+			pst.setString(1, "%" + name + "%");
+
 			ResultSet rs = pst.executeQuery();
-			
+
 			if (rs != null) {
 				while (rs.next()) {
-					items.add(new Book(rs.getInt("book_id"), rs.getString("book_name"), dao.getCategoryById(rs.getInt("book_category")), 
-							rs.getString("book_author"), rs.getString("book_image"), rs.getDouble("book_price"), 
-							rs.getDouble("book_original_price"), rs.getDouble("book_discount_price"), 
-							rs.getString("book_notes"), rs.getString("book_status"), rs.getInt("book_quantity")));
+					items.add(new Book(rs.getInt("book_id"), rs.getString("book_name"),
+							dao.getCategoryById(rs.getInt("book_category")), rs.getString("book_author"),
+							rs.getString("book_image"), rs.getDouble("book_price"), rs.getDouble("book_original_price"),
+							rs.getDouble("book_discount_price"), rs.getString("book_notes"),
+							rs.getString("book_status"), rs.getInt("book_quantity")));
 				}
 				rs.close();
 			}
@@ -127,26 +128,26 @@ public class BookDAOHandler {
 		}
 		return items;
 	}
-	
-	
+
 	public ArrayList<Book> getBooks(byte total) {
 		ArrayList<Book> items = new ArrayList<>();
-		
+
 		StringBuilder sql = new StringBuilder();
 		sql.append("SELECT * FROM tblbook LIMIT ?");
-		
+
 		try {
 			PreparedStatement pst = this.con.prepareStatement(sql.toString());
 			pst.setByte(1, total);
-			
+
 			ResultSet rs = pst.executeQuery();
-			
+
 			if (rs != null) {
 				while (rs.next()) {
-					items.add(new Book(rs.getInt("book_id"), rs.getString("book_name"), dao.getCategoryById(rs.getInt("book_category")), 
-							rs.getString("book_author"), rs.getString("book_image"), rs.getDouble("book_price"), 
-							rs.getDouble("book_original_price"), rs.getDouble("book_discount_price"), 
-							rs.getString("book_notes"), rs.getString("book_status"), rs.getInt("book_quantity")));
+					items.add(new Book(rs.getInt("book_id"), rs.getString("book_name"),
+							dao.getCategoryById(rs.getInt("book_category")), rs.getString("book_author"),
+							rs.getString("book_image"), rs.getDouble("book_price"), rs.getDouble("book_original_price"),
+							rs.getDouble("book_discount_price"), rs.getString("book_notes"),
+							rs.getString("book_status"), rs.getInt("book_quantity")));
 				}
 				rs.close();
 			}
@@ -162,15 +163,14 @@ public class BookDAOHandler {
 		}
 		return items;
 	}
-	
-	
+
 	public boolean addBook(Book item) {
 		StringBuilder sql = new StringBuilder();
 		sql.append("INSERT INTO tblbook(book_id, book_name, book_category, book_author, "
 				+ "book_image, book_price, book_original_price, book_discount_price, "
 				+ "book_notes, book_status, book_quantity) ");
 		sql.append("VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-		
+
 		try {
 			PreparedStatement pst = this.con.prepareStatement(sql.toString());
 			pst.setInt(1, item.getBook_id());
@@ -184,9 +184,9 @@ public class BookDAOHandler {
 			pst.setString(9, item.getBook_notes());
 			pst.setString(10, item.getBook_status());
 			pst.setInt(11, item.getBook_quantity());
-			
+
 			int result = pst.executeUpdate();
-			
+
 			if (result == 0) {
 				this.con.rollback();
 				return false;
@@ -205,8 +205,7 @@ public class BookDAOHandler {
 			return false;
 		}
 	}
-	
-	
+
 	public boolean updateBook(Book item) {
 		StringBuilder sql = new StringBuilder();
 		sql.append("UPDATE tblbook ");
@@ -214,7 +213,7 @@ public class BookDAOHandler {
 				+ "book_image = ?, book_price = ?, book_original_price = ?, book_discount_price = ?, "
 				+ "book_notes = ?, book_status = ?, book_quantity = ? ");
 		sql.append("WHERE book_id = ?");
-		
+
 		try {
 			PreparedStatement pst = this.con.prepareStatement(sql.toString());
 			pst.setString(1, item.getBook_name());
@@ -228,9 +227,9 @@ public class BookDAOHandler {
 			pst.setString(9, item.getBook_status());
 			pst.setInt(10, item.getBook_quantity());
 			pst.setInt(11, item.getBook_id());
-			
+
 			int result = pst.executeUpdate();
-			
+
 			if (result == 0) {
 				this.con.rollback();
 				return false;
@@ -249,17 +248,18 @@ public class BookDAOHandler {
 			return false;
 		}
 	}
+
 	public boolean deleteBook(int idDel) {
 		StringBuilder sql = new StringBuilder();
 		sql.append("DELETE FROM tblbook ");
 		sql.append("WHERE book_id = ?");
-		
+
 		try {
 			PreparedStatement pst = this.con.prepareStatement(sql.toString());
 			pst.setInt(1, idDel);
-			
+
 			int result = pst.executeUpdate();
-			
+
 			if (result == 0) {
 				this.con.rollback();
 				return false;
@@ -278,7 +278,62 @@ public class BookDAOHandler {
 			return false;
 		}
 	}
-	
+
+//	Đếm số lượng sách
+	public int getTotalBooks() {
+		StringBuilder sql = new StringBuilder();
+		sql.append("SELECT COUNT(*) FROM tblbook");
+		try {
+			PreparedStatement pst = this.con.prepareStatement(sql.toString());
+			ResultSet rs = pst.executeQuery();
+			if (rs != null) {
+				while (rs.next()) {
+					return rs.getInt(1);
+				}
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return 0;
+	}
+
+	public ArrayList<Book> pagingBooks(int index) {
+		ArrayList<Book> items = new ArrayList<>();
+		StringBuilder sql = new StringBuilder();
+		sql.append("SELECT * FROM tblbook ORDER BY book_id asc LIMIT 12 OFFSET ?");
+		try {
+			PreparedStatement pst = this.con.prepareStatement(sql.toString());
+			pst.setInt(1, (index - 1) * 3);
+			ResultSet rs = pst.executeQuery();
+
+			if (rs != null) {
+				while (rs.next()) {
+					items.add(new Book(rs.getInt("book_id"), rs.getString("book_name"),
+							dao.getCategoryById(rs.getInt("book_category")), rs.getString("book_author"),
+							rs.getString("book_image"), rs.getDouble("book_price"), rs.getDouble("book_original_price"),
+							rs.getDouble("book_discount_price"), rs.getString("book_notes"),
+							rs.getString("book_status"), rs.getInt("book_quantity")));
+				}
+				rs.close();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			try {
+				this.con.rollback();
+			} catch (SQLException e1) {
+				e1.printStackTrace();
+			}
+		}
+
+		return items;
+	}
+
+	public static void main(String[] args) {
+		ArrayList<Book> items = new BookDAOHandler().pagingBooks(2);
+		System.out.println(items);
+	}
+
 //	public static void main(String[] args) {
 //		BookDAOHandler dao = new BookDAOHandler();
 //		CategoryDAOHandler daoC = new CategoryDAOHandler();
@@ -312,5 +367,5 @@ public class BookDAOHandler {
 //		});
 //		System.out.println(new BookDAOHandler().getBookById(1));
 //	}
-	
+
 }

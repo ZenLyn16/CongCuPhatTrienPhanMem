@@ -48,7 +48,7 @@
 				
                 <div class="form-outline mb-4">
 				<select class="form-control" aria-label="Small select example" name="book_category">
-				  <option selected>${book.book_category.category_name}</option>
+				  <option value="${book.book_category.category_id}" selected>${book.book_category.category_name}</option>
 				  <c:forEach items="${iteamC}" var="x">
 					  <option value="${x.category_id}">${x.category_name}</option>
 				  </c:forEach>				    

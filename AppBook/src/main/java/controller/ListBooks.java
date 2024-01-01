@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,18 +10,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import database.BookDAOHandler;
+import model.Book;
 
 /**
- * Servlet implementation class DeleteBookControl
+ * Servlet implementation class ListBooks
  */
-@WebServlet("/delete-book")
-public class DeleteBookControl extends HttpServlet {
+@WebServlet("/list-books")
+public class ListBooks extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public DeleteBookControl() {
+	public ListBooks() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -31,9 +33,10 @@ public class DeleteBookControl extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		int id = Integer.parseInt(request.getParameter("book_id"));
-		new BookDAOHandler().deleteBook(id);
-		response.sendRedirect("manage-product");
+		int index = Integer.parseInt(request.getParameter("index"));
+		ArrayList<Book> items = new BookDAOHandler().pagingBooks(index);
+		request.setAttribute("items", items);
+		request.getRequestDispatcher("Home.jsp").forward(request, response);
 	}
 
 	/**

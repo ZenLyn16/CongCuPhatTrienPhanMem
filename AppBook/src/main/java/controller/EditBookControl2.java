@@ -54,7 +54,7 @@ public class EditBookControl2 extends HttpServlet {
 		Book editBook = new Book(name, daoC.getCategoryById(category), author, image, price, notes, status, quantity);
 		editBook.setBook_id(id);
 		if (new BookDAOHandler().updateBook(editBook)) {
-			response.sendRedirect("load");
+			response.sendRedirect("manage-product");
 		} else {
 			response.sendRedirect("FormAdd.jsp");
 		}
