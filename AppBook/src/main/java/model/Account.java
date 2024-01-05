@@ -20,6 +20,13 @@ public class Account {
 		this.account_is_admin = account_is_admin;
 	}
 
+	public Account(String account_username, String account_password, short account_is_sell, short account_is_admin) {
+		this.account_username = account_username;
+		this.account_password = account_password;
+		this.account_is_sell = account_is_sell;
+		this.account_is_admin = account_is_admin;
+	}
+
 	public int getAccount_id() {
 		return account_id;
 	}

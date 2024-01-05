@@ -1,5 +1,5 @@
 eclipse.preferences.version=1
-encoding//src/main/webapp/Detail.jsp=UTF-8
-encoding//src/main/webapp/FormEditBook.jsp=UTF-8
-encoding//src/main/webapp/Home.jsp=UTF-8
+encoding//src/main/webapp/views/admin/FormEditBook.jsp=UTF-8
+encoding//src/main/webapp/views/web/Detail.jsp=UTF-8
+encoding//src/main/webapp/views/web/Home.jsp=UTF-8
 encoding/<project>=UTF-8
